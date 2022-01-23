@@ -12,28 +12,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        switch_layouts(R.layout.activity_main, R.layout.activity_second);
+    }
 
-
-
+    private void switch_layouts(int layout,int next_layout){
+        setContentView(layout);
         Button button = findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_second);
-
-                Button button_back = findViewById(R.id.btn_back);
-                button_back.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        setContentView(R.layout.activity_main);
-                    }
-                });
+                setContentView(next_layout);
+                switch_layouts(next_layout, layout);
             }
         });
-
-
-
     }
 
 

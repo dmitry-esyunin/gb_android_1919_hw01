@@ -62,9 +62,9 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/btn_back"
+            android:id="@+id/btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="back"/>
+            android:text="Back"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
