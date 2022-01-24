@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">hw01</string>
+    <string name="btn_next_title">Next</string>
+    <string name="toggle_off_title">Toggle me: off</string>
+    <string name="toggle_on_title">Toggle me: on</string>
+    <string name="chkBox_check_me">check me</string>
+    <string name="switch_me">switch me</string>
+    <string name="et_main_input_text_here">input text here</string>
+    <string name="text_view_title">hw01</string>
 </resources>

@@ -1,66 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/te_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="@string/text_view_title"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_main"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:orientation="vertical"
-        tools:context=".MainActivity"
-        android:textSize="10sp"
-        >
-
-        <TextView
-            android:id="@+id/te_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="hw01"
-            android:layout_marginBottom="0dp"
-            />
-
-        <EditText
-            android:id="@+id/et_main"
-            android:layout_width="300dp"
-            android:gravity="center"
-            android:hint="input text here"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-             />
+        android:hint="@string/et_main_input_text_here" />
 
 
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="switch me"
-            android:gravity="right"
-            android:layout_marginBottom="20dp"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"
+        android:text="@string/switch_me"
+        tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="check me"
-            android:layout_marginBottom="30dp"
-            />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/chkBox_check_me" />
 
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOn ="OFF?"
-            android:textOff="ON!"
-            android:layout_marginBottom="40dp"
-            />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textOff="@string/toggle_off_title"
+        android:textOn="@string/toggle_on_title" />
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Next"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_next_title" />
 
 
-    </LinearLayout>
+</LinearLayout>
 
